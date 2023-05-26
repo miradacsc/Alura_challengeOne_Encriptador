@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Encriptador de Texto</h1>
+        <textarea id="input" placeholder="Introduce el texto" oninput="resetOutput()"></textarea>
+        <div>
+          <input type="radio" id="encryptRadio" name="operation" checked>
+          <label for="encryptRadio">Encriptar</label>
+          <input type="radio" id="decryptRadio" name="operation">
+          <label for="decryptRadio">Desencriptar</label>
+        </div>
+        <button onclick="performOperation()">Realizar operación</button>
+        <div>
+          <button id="copyButton" onclick="copyText()">Copiar</button>
+          <span id="copySuccess" class="hidden">¡Texto copiado!</span>
+        </div>
+        <textarea id="output" placeholder="Resultado" readonly></textarea>
+      </div>
+    
+      <script src="script.js"></script>
     
 </body>
 </html>
