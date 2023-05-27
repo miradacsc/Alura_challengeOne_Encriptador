@@ -7,26 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Encriptador de Texto</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
+
   <div class="container">
+    <img class="logo" src="/aluraLogo.png" alt="logo de alura">
     <h1>Encriptador de Texto</h1>
+    <h4 class="informacion">Solo letras minúsculas y sin acentos</h4>
     <textarea id="input" placeholder="Introduce el texto" oninput="resetOutput()"></textarea>
-    <div>
-      <input type="radio" id="encryptRadio" name="operation" checked>
-      <label for="encryptRadio">Encriptar</label>
-      <input type="radio" id="decryptRadio" name="operation">
-      <label for="decryptRadio">Desencriptar</label>
-    </div>
-    <button onclick="performOperation()">Realizar operación</button>
-    <button id="copyButton" onclick="copyText()">Copiar</button>
-    <span id="copySuccess" class="hidden">¡Texto copiado!</span>
-    <div>
-    </div>
+    <div >
+      <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+      <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+        <button id="copyButton" onclick="copyText()">Copiar</button>
+        <span id="copySuccess" class="hidden">¡Texto copiado!</span>
+      
+   </div>
     <textarea id="output" placeholder="Resultado" readonly></textarea>
   </div>
-
+  
+  
   <script src="script.js"></script>
 
 </body>

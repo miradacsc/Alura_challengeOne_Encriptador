@@ -13,10 +13,22 @@ body {
     background-color: #444;
     border-radius: 5px;
   }
+
+  .logo {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   h1 {
     text-align: center;
   }
+
+  .informacion {
+    color: #04c1d3;
+    text-align: center;
+}
   
   textarea {
     width: 100%;
@@ -31,19 +43,32 @@ body {
   
   button {
     display: inline-block;
-    margin: 10px 5px;
+    margin: 20px 10px;
     padding: 10px 20px;
-    background-color: #4caf50;
-    color: #fff;
+    background-color: #04c1d3;
+    color: #0e0e0e;
+    font-weight: 800;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #04c1d3;
   }
   
   .hidden {
     display: none;
   }
+
+  .coppyButton {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #d7dce3;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 120px;
+    margin-top: 565px;
+    position: absolute;
+    width: 336px;
+}
